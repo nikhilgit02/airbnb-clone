@@ -1,6 +1,7 @@
 import React from "react";
 import star from "../Star 1.png"
 
+
 export default function Card(props){
     return(
         <section>
