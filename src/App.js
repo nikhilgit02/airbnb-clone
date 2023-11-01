@@ -7,20 +7,18 @@ import data from './components/data';
 
 export default function App() {
   const cardelement = data.map( card =>
-    <Card 
-    img={card.coverImg}
-    title={card.title}
-    rating={card.stats.rating}
-    reviewCount={card.stats.reviewCount}
-    country={card.location}
-    price={card.price}
+    <Card
+    key = {card.id}
+    card={card}
     />
   )
   return (
     <div>
       <Navbar/>
       <StaticMain/>
+      <section className='cards-list'>
       {cardelement}
+      </section>
     </div>
   );
 }

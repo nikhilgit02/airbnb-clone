@@ -68,6 +68,8 @@ padding-right: 2px;
 .card-base{
   display: flex;
   flex-direction: column;
+  flex: 0 0 auto;         /* ADD */
+  position: relative;
 }
 
 .rating{
@@ -84,4 +86,22 @@ font-weight: 300;
 line-height: 110%; /* 13.2px */
 margin: 0px;
 padding-bottom: 8px;
+}
+
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+
+}
+
+.card-badge{
+  position: absolute;
+  background-color: aliceblue;
+  border-radius: 2px;
+  padding: 5px 7px;
+  top: 6px;
+  left: 6px;
+  font-weight: bold;
 }
